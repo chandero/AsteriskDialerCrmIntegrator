@@ -1,0 +1,51 @@
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[main] INFO org.eclipse.jetty.server.Server - jetty-8.1.14.v20131031
+[main] INFO org.eclipse.jetty.webapp.StandardDescriptorProcessor - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+[Asterisk-Java ManagerConnection-0-Reader-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-0] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Successfully logged in
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Determined Asterisk version: Asterisk 13
+[main] INFO org.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:5000
+[qtp400136488-18] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-1-Reader-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-1-Reader-0] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[qtp400136488-18] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Successfully logged in
+[qtp400136488-18] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Determined Asterisk version: Asterisk 13
+[qtp400136488-18] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+[Asterisk-Java ManagerConnection-1-Reader-0] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: No more lines available: Scanner closed
+[qtp400136488-15] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-2-Reader-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-2-Reader-0] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[qtp400136488-15] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Successfully logged in
+[qtp400136488-15] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Determined Asterisk version: Asterisk 13
+[qtp400136488-15] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+[Asterisk-Java ManagerConnection-2-Reader-0] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: Socket closed
+[qtp400136488-16] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-3-Reader-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-3-Reader-0] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[qtp400136488-16] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Successfully logged in
+[qtp400136488-16] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Determined Asterisk version: Asterisk 13
+[qtp400136488-16] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+[Asterisk-Java ManagerConnection-3-Reader-0] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: No more lines available: Scanner closed
+[Asterisk-Java ManagerConnection-0-Reader-0] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: No more lines available: null
+[Asterisk-Java ManagerConnection-0-Reader-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+[Asterisk-Java ManagerConnection-0-Reconnect-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reconnect-0] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Exception while trying to reconnect: Connection refused (Connection refused)
+[Asterisk-Java ManagerConnection-0-Reconnect-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reconnect-0] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Exception while trying to reconnect: Connection refused (Connection refused)
+[Asterisk-Java ManagerConnection-0-Reconnect-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reconnect-0] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Exception while trying to reconnect: Connection refused (Connection refused)
+[Asterisk-Java ManagerConnection-0-Reconnect-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reconnect-0] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Exception while trying to reconnect: Connection refused (Connection refused)
+[Asterisk-Java ManagerConnection-0-Reconnect-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reconnect-0] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Exception while trying to reconnect: Connection refused (Connection refused)
+[Asterisk-Java ManagerConnection-0-Reconnect-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reconnect-0] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Exception while trying to reconnect: Connection refused (Connection refused)
+[Asterisk-Java ManagerConnection-0-Reconnect-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reconnect-0] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Exception while trying to reconnect: Connection refused (Connection refused)
+[Asterisk-Java ManagerConnection-0-Reconnect-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reconnect-0] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Exception while trying to reconnect: Connection refused (Connection refused)
+[Asterisk-Java ManagerConnection-0-Reconnect-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reconnect-0] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Exception while trying to reconnect: Connection refused (Connection refused)
+[Asterisk-Java ManagerConnection-0-Reconnect-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reconnect-0] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Exception while trying to reconnect: Connection refused (Connection refused)

@@ -1,0 +1,3 @@
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[main] INFO org.eclipse.jetty.server.Server - jetty-8.1.14.v20131031
+library initialization failed - unable to allocate file descriptor table - out of memoryAborted

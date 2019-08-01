@@ -1,0 +1,357 @@
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[main] INFO org.eclipse.jetty.server.Server - jetty-8.1.14.v20131031
+[main] INFO org.eclipse.jetty.webapp.StandardDescriptorProcessor - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+[Asterisk-Java ManagerConnection-0-Reader-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-0] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[main] INFO org.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:5000
+[Asterisk-Java ManagerConnection-0-Reader-0] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: No more lines available: null
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+2019-06-03 19:25:49,207 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-1] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-1] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+2019-06-03 19:25:51,214 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Asterisk-Java ManagerConnection-0-Reader-1] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: No more lines available: Scanner closed
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-2] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-2] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+2019-06-03 19:25:53,227 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Asterisk-Java ManagerConnection-0-Reader-2] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: No more lines available: null
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-3] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-3] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+2019-06-03 19:25:55,233 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Asterisk-Java ManagerConnection-0-Reader-3] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: Stream closed
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-4] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-4] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+[Asterisk-Java ManagerConnection-0-Reader-4] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: Socket closed
+2019-06-03 19:25:57,240 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-5] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-5] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Asterisk-Java ManagerConnection-0-Reader-5] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: No more lines available: null
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+2019-06-03 19:25:59,249 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-6] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-6] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+2019-06-03 19:26:01,255 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Asterisk-Java ManagerConnection-0-Reader-6] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: No more lines available: Scanner closed
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-7] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-7] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+[Asterisk-Java ManagerConnection-0-Reader-7] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: No more lines available: null
+2019-06-03 19:26:03,267 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-8] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-8] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+2019-06-03 19:26:05,274 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Asterisk-Java ManagerConnection-0-Reader-8] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: No more lines available: Scanner closed
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-9] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-9] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+2019-06-03 19:26:07,283 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Asterisk-Java ManagerConnection-0-Reader-9] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: No more lines available: Scanner closed
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-10] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-10] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+2019-06-03 19:26:09,288 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Asterisk-Java ManagerConnection-0-Reader-10] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: No more lines available: null
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-11] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-11] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+2019-06-03 19:26:11,292 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Asterisk-Java ManagerConnection-0-Reader-11] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: No more lines available: Scanner closed
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-12] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-12] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+2019-06-03 19:26:13,296 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Asterisk-Java ManagerConnection-0-Reader-12] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: No more lines available: null
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-13] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-13] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+[Asterisk-Java ManagerConnection-0-Reader-13] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: No more lines available: null
+2019-06-03 19:26:15,303 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-14] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-14] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+[Asterisk-Java ManagerConnection-0-Reader-14] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: No more lines available: null
+2019-06-03 19:26:17,308 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-15] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-15] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+2019-06-03 19:26:19,322 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Asterisk-Java ManagerConnection-0-Reader-15] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: Socket closed
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-16] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-16] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+2019-06-03 19:26:21,327 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Asterisk-Java ManagerConnection-0-Reader-16] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: No more lines available: Scanner closed
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-17] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-17] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+[Asterisk-Java ManagerConnection-0-Reader-17] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: No more lines available: null
+2019-06-03 19:26:23,331 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-18] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-18] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+2019-06-03 19:26:25,336 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Asterisk-Java ManagerConnection-0-Reader-18] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: Socket closed
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-19] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-19] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+[Asterisk-Java ManagerConnection-0-Reader-19] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: No more lines available: null
+2019-06-03 19:26:27,345 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-20] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-20] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Asterisk-Java ManagerConnection-0-Reader-20] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: No more lines available: null
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+2019-06-03 19:26:29,353 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-21] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-21] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+[Asterisk-Java ManagerConnection-0-Reader-21] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: No more lines available: null
+2019-06-03 19:26:31,358 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-22] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-22] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+2019-06-03 19:26:33,362 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Asterisk-Java ManagerConnection-0-Reader-22] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: Stream closed
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-23] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-23] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+2019-06-03 19:26:35,367 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Asterisk-Java ManagerConnection-0-Reader-23] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: Socket closed
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-24] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-24] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+[Asterisk-Java ManagerConnection-0-Reader-24] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: No more lines available: null
+2019-06-03 19:26:37,371 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-25] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-25] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+[Asterisk-Java ManagerConnection-0-Reader-25] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: No more lines available: null
+2019-06-03 19:26:39,375 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-26] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-26] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Closing socket.
+2019-06-03 19:26:41,381 utils.ConnectionTask WARN [Thread-0] - Can not connect to Asterisk:
+org.asteriskjava.manager.AuthenticationFailedException: Authentication failed
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.doLogin(ManagerConnectionImpl.java:604)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:468)
+	at org.asteriskjava.manager.internal.ManagerConnectionImpl.login(ManagerConnectionImpl.java:453)
+	at org.asteriskjava.manager.DefaultManagerConnection.login(DefaultManagerConnection.java:309)
+	at utils.ConnectionTask.run(ConnectionTask.java:27)
+	at java.lang.Thread.run(Thread.java:748)
+[Asterisk-Java ManagerConnection-0-Reader-26] INFO org.asteriskjava.manager.internal.ManagerReaderImpl - Terminating reader thread: No more lines available: Scanner closed
+[Thread-0] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connecting to 127.0.0.1:5038
+[Asterisk-Java ManagerConnection-0-Reader-27] INFO org.asteriskjava.manager.internal.ManagerConnectionImpl - Connected via Asterisk Call Manager/2.10.4
+[Asterisk-Java ManagerConnection-0-Reader-27] WARN org.asteriskjava.manager.internal.ManagerConnectionImpl - Unsupported protocol version 'Asterisk Call Manager/2.10.4'. Use at your own risk.
