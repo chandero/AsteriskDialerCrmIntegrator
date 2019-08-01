@@ -14,21 +14,24 @@ public class DialerTask
 {
 
   private static final Logger logger = Logger.getLogger(ConnectionTask.class);
+  private final ManagerConnection connection;
   
-  public DialerTask() {
+  public DialerTask(ManagerConnection connection) {
+      this.connection = connection;
   }
   
   public void run()
   {
     // Leer campañas activas
     // DialerAction action = new DialerAction();
-    DialerAgentAction action = new DialerAgentAction();
+    DialerAgentAction action = new DialerAgentAction(this.connection);
     while (true) {      
         try {
 
             System.out.println("Iniciando Marcacion...");              
             action.doAction();
-            System.out.println("Finalizada Marcacion...");            
+            System.out.println("Finalizada Marcacion...");  
+            System.out.println("");
             Thread.sleep(5000L);
         } catch (SQLException ex) {
           java.util.logging.Logger.getLogger(DialerTask.class.getName()).log(Level.SEVERE, null, ex);

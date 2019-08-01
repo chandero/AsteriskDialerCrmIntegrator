@@ -25,11 +25,13 @@ public class DialerAgentAction {
     protected SQLiteDatabase database;
     private final String context;
     private final String queue;
+    private final ManagerConnection connection;
 
-    public DialerAgentAction() {
+    public DialerAgentAction(ManagerConnection connection) {
         database = SQLiteDatabase.getInstance();
         this.context = PropertiesReader.getProperty("context");
         this.queue = PropertiesReader.getProperty("queue");
+        this.connection = connection;
     }
 
     public String doAction() throws SQLException, ParseException {
@@ -142,7 +144,7 @@ public class DialerAgentAction {
                         database.updateSql("UPDATE " + SQLiteDatabase.agentTable + " SET agen_estado = ? WHERE uid = ?", aparams);
                         logger.info("Realizando Marcación de Campanha:" + camp_nombre + ", numero: " + rsl.getString("list_phonenumber") + ", leadId: " + rsl.getString("list_leadid"));
                         OriginateAction action = new OriginateAction();
-                        action.setChannel("Local/" + rsl.getString("list_phonenumber") + "@from-interno");
+                        action.setChannel("Local/" + rsl.getString("list_phonenumber").trim() + "@from-interno");
                         action.setContext(this.context);
                         action.setPriority(1);
                         action.setExten(rsa.getString("agen_exten"));
@@ -151,14 +153,10 @@ public class DialerAgentAction {
                         action.setActionId(rsa.getString("uid"));
                         action.setVariables(callParams);
                         action.setAsync(true);
-                        ManagerConnection connection = ConnectionManager.getConnection();
                         try {
-                            connection.login();
-                            ManagerResponse ex = connection.sendAction(action, 10000L);
-                            connection.logoff();
-                        } catch (TimeoutException | IOException | AuthenticationFailedException var5) {
+                            ManagerResponse ex = this.connection.sendAction(action, 10000L);
+                        } catch (TimeoutException | IOException var5) {
                             logger.fatal("Error on send request to crm", var5);
-                            connection.logoff();
                         }
                     }
 
@@ -184,7 +182,7 @@ public class DialerAgentAction {
                             database.updateSql("UPDATE " + SQLiteDatabase.agentTable + " SET agen_estado = ? WHERE uid = ?", aparams);
                             logger.info("Realizando Marcación de Campanha:" + camp_nombre + ", numero: " + rsl.getString("list_phonenumber") + ", leadId: " + rsl.getString("list_leadid"));
                             OriginateAction action = new OriginateAction();
-                            action.setChannel("Local/" + rsl.getString("list_phonenumber") + "@from-interno");
+                            action.setChannel("Local/" + rsl.getString("list_phonenumber").trim() + "@from-interno");
                             action.setContext(this.context);
                             action.setPriority(1);
                             action.setExten(rsa.getString("agen_exten"));
@@ -193,14 +191,10 @@ public class DialerAgentAction {
                             action.setActionId(rsa.getString("uid"));
                             action.setVariables(callParams);
                             action.setAsync(true);
-                            ManagerConnection connection = ConnectionManager.getConnection();
                             try {
-                                connection.login();
-                                ManagerResponse ex = connection.sendAction(action, 10000L);
-                                connection.logoff();
-                            } catch (TimeoutException | IOException | AuthenticationFailedException var5) {
+                                ManagerResponse ex = this.connection.sendAction(action, 10000L);
+                            } catch (TimeoutException | IOException var5) {
                                 logger.fatal("Error on send request to asterisk", var5);
-                                connection.logoff();
                             }
                         }
                     }
@@ -221,7 +215,7 @@ public class DialerAgentAction {
                             callParams.put("list_uid", rsl.getString("uid"));
                             logger.info("Realizando Marcación de Campanha:" + camp_nombre + ", numero: " + rsl.getString("list_phonenumber") + ", leadId: " + rsl.getString("list_leadid"));
                             OriginateAction action = new OriginateAction();
-                            action.setChannel("Local/" + rsl.getString("list_phonenumber") + "@from-interno");
+                            action.setChannel("Local/" + rsl.getString("list_phonenumber").trim() + "@from-interno");
                             action.setContext(this.context);
                             action.setPriority(1);
                             action.setExten(rsa.getString("agen_exten"));
@@ -229,14 +223,10 @@ public class DialerAgentAction {
                             action.setAccount(rsl.getString("uid"));
                             action.setVariables(callParams);
                             action.setAsync(true);
-                            ManagerConnection connection = ConnectionManager.getConnection();
                             try {
-                                connection.login();
-                                ManagerResponse ex = connection.sendAction(action, 10000L);
-                                connection.logoff();
-                            } catch (TimeoutException | IOException | AuthenticationFailedException var5) {
+                                ManagerResponse ex = this.connection.sendAction(action, 10000L);
+                            } catch (TimeoutException | IOException var5) {
                                 logger.fatal("Error on send request to asterisk", var5);
-                                connection.logoff();
                             }
                         }
                     }

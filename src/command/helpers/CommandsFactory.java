@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 import org.apache.log4j.Logger;
 import org.asteriskjava.manager.event.ManagerEvent;
+import org.asteriskjava.manager.event.QueueCallerJoinEvent;
 
 public class CommandsFactory
 {
@@ -41,6 +42,6 @@ public class CommandsFactory
         eventProcessors.put("VarSetEvent", VarSetEventCommand.class);
         eventProcessors.put("QueueMemberEvent", QueueMemberStatusCommand.class);
         eventProcessors.put("OriginateResponseEvent", OriginateResponseEventCommand.class);
-        eventProcessors.put("QueueEntryEvent", QueueEntryEventCommand.class);
+        eventProcessors.put("QueueCallerJoinEvent", QueueCallerJoinEventCommand.class);
     }
 }

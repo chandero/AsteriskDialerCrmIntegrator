@@ -10,29 +10,21 @@ import java.io.UnsupportedEncodingException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.security.*;
-import java.security.cert.CertificateException;
 import java.util.Iterator;
 import java.util.List;
 import java.util.logging.Level;
-import javax.net.ssl.SSLContext;
-import javax.net.ssl.X509TrustManager;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpVersion;
 import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.conn.scheme.*;
-import org.apache.http.conn.ssl.SSLConnectionSocketFactory;
-import org.apache.http.conn.ssl.SSLContexts;
 import org.apache.http.conn.ssl.SSLSocketFactory;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.params.BasicHttpParams;
 import org.apache.http.params.HttpProtocolParams;
-import org.apache.http.protocol.HTTP;
 import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
 
@@ -83,16 +75,11 @@ public class CrmConnector
                 uriBuilder.setParameter(param.getName(), param.getValue());
             }
             URI uri = uriBuilder.build();
-            
-            SSLContext sslcontext = SSLContexts.custom().useSSL().build();
-            sslcontext.init(null, new X509TrustManager[]{new HttpsTrustManager()}, new SecureRandom());
-            SSLConnectionSocketFactory factory = new SSLConnectionSocketFactory(sslcontext,
-                SSLConnectionSocketFactory.BROWSER_COMPATIBLE_HOSTNAME_VERIFIER);
-            // client = HttpClients.custom().setSSLSocketFactory(factory).build();
-            
+                      
             HttpGet request = new HttpGet(uri);
-            HttpClient client = getNewHttpClient();            
-                        HttpResponse response = client.execute(request);
+            HttpClient client = getNewHttpClient();          
+            System.out.println("Enviando: " + request.toString());
+            HttpResponse response = client.execute(request);
             int statusCode = response.getStatusLine().getStatusCode();
 
             // Getting the response body.
@@ -108,10 +95,6 @@ public class CrmConnector
         {
             logger.fatal("Error on send GET request to crm", ex);
         } catch (URISyntaxException ex) {
-            java.util.logging.Logger.getLogger(CrmConnector.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (NoSuchAlgorithmException ex) {
-            java.util.logging.Logger.getLogger(CrmConnector.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (KeyManagementException ex) {
             java.util.logging.Logger.getLogger(CrmConnector.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
