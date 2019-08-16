@@ -13,7 +13,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import org.apache.log4j.Logger;
-import org.asteriskjava.manager.AuthenticationFailedException;
 import org.asteriskjava.manager.ManagerConnection;
 import org.asteriskjava.manager.TimeoutException;
 import org.asteriskjava.manager.action.OriginateAction;
@@ -148,7 +147,7 @@ public class DialerAgentAction {
                         action.setContext(this.context);
                         action.setPriority(1);
                         action.setExten(rsa.getString("agen_exten"));
-                        action.setCallerId(rsl.getString("list_agent"));
+                        action.setCallerId("<" + rsl.getString("list_phonenumber") + ">");
                         action.setAccount(rsl.getString("uid"));
                         action.setActionId(rsa.getString("uid"));
                         action.setVariables(callParams);
@@ -186,7 +185,7 @@ public class DialerAgentAction {
                             action.setContext(this.context);
                             action.setPriority(1);
                             action.setExten(rsa.getString("agen_exten"));
-                            action.setCallerId(rsl.getString("list_agent"));
+                            action.setCallerId("<" + rsl.getString("list_phonenumber") + ">");
                             action.setAccount(rsl.getString("uid"));
                             action.setActionId(rsa.getString("uid"));
                             action.setVariables(callParams);
@@ -211,16 +210,19 @@ public class DialerAgentAction {
                             callParams.put("strServiceId", rsl.getString("list_service"));
                             callParams.put("strLeadID", rsl.getString("list_leadid"));
                             callParams.put("strList", rsl.getString("list_group"));
-                            callParams.put("strAgent", rsl.getString("list_agent"));
+                            callParams.put("strAgent", rsa.getString("agen_id"));
                             callParams.put("list_uid", rsl.getString("uid"));
+                            List<Object> resultParams = new ArrayList();
+                            resultParams.add(rsl.getString("list_agent"));
                             logger.info("Realizando Marcación de Campanha:" + camp_nombre + ", numero: " + rsl.getString("list_phonenumber") + ", leadId: " + rsl.getString("list_leadid"));
                             OriginateAction action = new OriginateAction();
                             action.setChannel("Local/" + rsl.getString("list_phonenumber").trim() + "@from-interno");
                             action.setContext(this.context);
                             action.setPriority(1);
                             action.setExten(rsa.getString("agen_exten"));
-                            action.setCallerId(rsl.getString("list_agent"));
+                            action.setCallerId("<" + rsl.getString("list_phonenumber") + ">");
                             action.setAccount(rsl.getString("uid"));
+                            action.setActionId(rsa.getString("uid"));
                             action.setVariables(callParams);
                             action.setAsync(true);
                             try {

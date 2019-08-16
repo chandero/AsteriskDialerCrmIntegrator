@@ -5,14 +5,8 @@
         <group>
             <file>file:/C:/opt/AsteriskCrmIntegrator/src/command/QueueCallerJoinEventCommand.java</file>
             <file>file:/C:/opt/AsteriskCrmIntegrator/src/utils/DialerTask.java</file>
-            <file>file:/C:/opt/AsteriskCrmIntegrator/src/command/QueueEntryEventCommand.java</file>
-            <file>file:/C:/opt/AsteriskCrmIntegrator/src/asteriskcrmintegrator/AsteriskCrmIntegrator.java</file>
-            <file>file:/C:/opt/AsteriskCrmIntegrator/src/utils/CrmConnector.java</file>
-            <file>file:/C:/opt/AsteriskCrmIntegrator/src/utils/DeleteListAction.java</file>
-            <file>file:/C:/opt/AsteriskCrmIntegrator/src/command/helpers/CommandsFactory.java</file>
+            <file>file:/C:/opt/AsteriskCrmIntegrator/src/command/updaters/HangupEventUpdater.java</file>
             <file>file:/C:/opt/AsteriskCrmIntegrator/src/command/updaters/QueueCallerJoinEventUpdater.java</file>
-            <file>file:/C:/opt/AsteriskCrmIntegrator/src/utils/DeleteCampaignAction.java</file>
-            <file>file:/C:/opt/AsteriskCrmIntegrator/src/command/updaters/QueueEntryEventUpdater.java</file>
             <file>file:/C:/opt/AsteriskCrmIntegrator/src/utils/DialerAgentAction.java</file>
         </group>
     </open-files>

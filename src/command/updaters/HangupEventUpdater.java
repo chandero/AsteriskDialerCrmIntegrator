@@ -56,7 +56,7 @@ public class HangupEventUpdater
     List<Object> resultParams = new ArrayList();
     resultParams.add(event.getCauseTxt());
     if ( event.getAccountCode() != null && !event.getAccountCode().isEmpty()) {
-        resultParams.add(Integer.valueOf(event.getAccountCode()));
+        resultParams.add(Long.valueOf(event.getAccountCode()));
     } else {
         resultParams.add(0);
     }
