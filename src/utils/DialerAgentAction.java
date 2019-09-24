@@ -213,7 +213,9 @@ public class DialerAgentAction {
                             callParams.put("strAgent", rsa.getString("agen_id"));
                             callParams.put("list_uid", rsl.getString("uid"));
                             List<Object> resultParams = new ArrayList();
-                            resultParams.add(rsl.getString("list_agent"));
+                            resultParams.add("LLAMANDO");
+                            resultParams.add(rsl.getInt("uid"));
+                            database.updateSql("UPDATE " + SQLiteDatabase.listsTable + " SET list_status = ? WHERE uid = ?", resultParams);
                             logger.info("Realizando Marcación de Campanha:" + camp_nombre + ", numero: " + rsl.getString("list_phonenumber") + ", leadId: " + rsl.getString("list_leadid"));
                             OriginateAction action = new OriginateAction();
                             action.setChannel("Local/" + rsl.getString("list_phonenumber").trim() + "@from-interno");
