@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import java.util.logging.Level;
 import org.apache.log4j.Logger;
@@ -52,8 +53,10 @@ public class ConnectionTask
     List<Object> updateParams = new ArrayList<>();
     updateParams.add("LISTA");
     updateParams.add("UNKNOWN");
+    updateParams.add(Calendar.getInstance().getTimeInMillis());
+    updateParams.add(Calendar.getInstance().getTimeInMillis());
       try {
-          database.updateSql("UPDATE " + SQLiteDatabase.agentTable + " SET agen_estado = ?, agen_exten_estado = ?", updateParams);
+          database.updateSql("UPDATE " + SQLiteDatabase.agentTable + " SET agen_estado = ?, agen_exten_estado = ?, agen_laststartcall = ?, agen_lastendcall = ?", updateParams);
       } catch (SQLException ex) {
           java.util.logging.Logger.getLogger(ConnectionTask.class.getName()).log(Level.SEVERE, null, ex);
       }

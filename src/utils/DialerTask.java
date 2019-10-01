@@ -25,7 +25,8 @@ public class DialerTask
     // Leer campañas activas
     // DialerAction action = new DialerAction();
     // DialerAgentAction action = new DialerAgentAction(this.connection);
-    DialerReverseAgentAction action = new DialerReverseAgentAction(this.connection);
+    // DialerReverseAgentAction action = new DialerReverseAgentAction(this.connection);
+    DialerReverseAgentList3Action action = new DialerReverseAgentList3Action(this.connection);
     while (true) {      
         try {
 

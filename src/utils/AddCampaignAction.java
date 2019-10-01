@@ -24,6 +24,7 @@ public class AddCampaignAction {
     private final String camp_horafinal_tarde;
     private final String camp_cola;
     private final String camp_estado;
+    private final String camp_tiempofuera;
     
     protected SQLiteDatabase database;
     
@@ -37,6 +38,7 @@ public class AddCampaignAction {
       this.camp_horafinal_tarde = request.getParameter("hft");
       this.camp_cola = request.getParameter("q");
       this.camp_estado = request.getParameter("e");
+      this.camp_tiempofuera = request.getParameter("tf");
       
       database = SQLiteDatabase.getInstance();
     }
@@ -54,6 +56,7 @@ public class AddCampaignAction {
         params.add(stf.parse(this.camp_horafinal_tarde));
         params.add(this.camp_cola);
         params.add(this.camp_estado);
+        params.add(Integer.valueOf(this.camp_tiempofuera));        
         params.add(this.camp_nombre);
         Boolean update = database.updateSql("UPDATE " + SQLiteDatabase.campsTable + " SET "
                 + "camp_fechainicial = ?,"
@@ -63,15 +66,16 @@ public class AddCampaignAction {
                 + "camp_horainicial_tarde = ?,"
                 + "camp_horafinal_tarde = ?,"
                 + "camp_cola = ?,"
-                + "camp_estado = ? "
+                + "camp_estado = ?, "
+                + "camp_tiempofuera = ?"
                 + "WHERE camp_nombre = ?;"
                 , params);
         if (!update)
         {
             String query = "INSERT INTO " + SQLiteDatabase.campsTable
                     + " (camp_fechainicial, camp_fechafinal, camp_horainicial_manana, camp_horafinal_manana,"
-                    + " camp_horainicial_tarde, camp_horafinal_tarde, camp_cola, camp_estado, camp_nombre) "
-                    + " VALUES (?,?,?,?,?,?,?,?,?);";
+                    + " camp_horainicial_tarde, camp_horafinal_tarde, camp_cola, camp_estado, camp_tiempofuera, camp_nombre) "
+                    + " VALUES (?,?,?,?,?,?,?,?,?,?);";
             String insert = database.insertSql(query, params);
             result = insert;
         } else {

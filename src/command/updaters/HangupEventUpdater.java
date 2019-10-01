@@ -6,6 +6,7 @@ import exceptions.UpdateDataException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.log4j.Logger;
@@ -74,8 +75,9 @@ public class HangupEventUpdater
         if (uid != null) {
           List<Object> aparams = new ArrayList<>();
           aparams.add("LISTA");
+          aparams.add(Calendar.getInstance().getTimeInMillis());
           aparams.add(uid);
-          database.updateSql("UPDATE " +SQLiteDatabase.agentTable + " SET agen_estado = ? WHERE uid = ?", aparams);
+          database.updateSql("UPDATE " +SQLiteDatabase.agentTable + " SET agen_estado = ?, agen_lastendcall = ? WHERE uid = ?", aparams);
         }
       }
     }

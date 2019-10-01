@@ -57,6 +57,7 @@ public class AsteriskCrmIntegrator
             });
             // Migration.applyMigrations();
             (new Thread(new ConnectionTask(asteriskConnection))).start();
+            Thread.sleep(5000L);
             (new Thread(new DialerTask(asteriskConnection))).start();
             Server server = new Server();
             SelectChannelConnector connector = new SelectChannelConnector();
