@@ -184,10 +184,8 @@ public class DialerReverseAgentAction {
                             logger.info("Realizando Marcación de Campanha:" + camp_nombre + ", numero: " + rsl.getString("list_phonenumber") + ", leadId: " + rsl.getString("list_leadid"));
                             OriginateAction action = new OriginateAction();
                             action.setChannel("Local/" + rsa.getString("agen_exten").trim() + "@from-interno");
-                            //action.setChannel("Local/" + rsl.getString("list_phonenumber").trim() + "@from-interno");
                             action.setContext(this.context);
                             action.setPriority(1);
-                            //action.setExten(rsa.getString("agen_exten"));
                             action.setExten(rsl.getString("list_phonenumber").trim());
                             action.setCallerId("<" + rsl.getString("list_phonenumber") + ">");
                             action.setAccount(rsl.getString("uid"));
@@ -216,10 +214,10 @@ public class DialerReverseAgentAction {
                             callParams.put("strList", rsl.getString("list_group"));
                             callParams.put("strAgent", rsa.getString("agen_id"));
                             callParams.put("list_uid", rsl.getString("uid"));
-                            List<Object> resultParams = new ArrayList();
-                            resultParams.add("LLAMANDO");
-                            resultParams.add(rsl.getInt("uid"));
-                            database.updateSql("UPDATE " + SQLiteDatabase.listsTable + " SET list_status = ? WHERE uid = ?", resultParams);
+                            List<Object> aparams = new ArrayList<>();
+                            aparams.add("OCUPADO");
+                            aparams.add(rsa.getInt("uid"));
+                            database.updateSql("UPDATE " + SQLiteDatabase.agentTable + " SET agen_estado = ? WHERE uid = ?", aparams);
                             logger.info("Realizando Marcación de Campanha:" + camp_nombre + ", numero: " + rsl.getString("list_phonenumber") + ", leadId: " + rsl.getString("list_leadid"));
                             OriginateAction action = new OriginateAction();
                             action.setChannel("Local/" + rsa.getString("agen_exten").trim() + "@from-interno");

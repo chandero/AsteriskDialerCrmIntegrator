@@ -37,7 +37,6 @@ public class OriginateResponseEventUpdater extends AbstractEventUpdater
                 updateParams.add("OCUPADO");
             }
             updateParams.add(uid);
-
             try {
                 database.updateSql("UPDATE " + SQLiteDatabase.agentTable + " SET agen_estado = ? WHERE uid = ?", updateParams);
                 if (event.getResponse().equals("Success")) {
