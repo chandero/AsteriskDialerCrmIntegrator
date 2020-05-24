@@ -1,5 +1,5 @@
 # AsteriskDialerCrmIntegrator
-Marcador Integrador CRM Vtiger con Asterisk 13+
+Marcador Integrador CRM Personalizado con Asterisk 13+
 
 Cómo instalar?
 
